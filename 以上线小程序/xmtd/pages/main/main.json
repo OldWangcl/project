@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "今日精选",
+  "navigationBarBackgroundColor": "#87CEFA",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark"
+}

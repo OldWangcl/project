@@ -1,0 +1,40 @@
+<!--页面  -->
+<view class='containers' wx:if='{{kfhidden}}'>
+  <view class='top'>
+    <view class='head'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view id="lanren" class='music'>
+      <view id='audio-btn'>
+        <image class='on' wx:if='{{isPlayMusic}}' src='../../images/music_on.png' bindtap='onPauseMusic'></image>
+        <image wx:else src='../../images/music_off.png' bindtap='onStartMusic'></image>
+      </view>
+    </view>
+  </view>
+  <view class='username'>{{userInfo.nickName}}</view>
+  <!--test  -->
+  <view class='page'>
+    <view class='page_hd'>
+      <view class='page_title'>{{index + 1}}、{{questionDetail}}</view>
+    </view>
+    <view class='page_bd'>
+      <view class='weui-cells weui-cells_after-title'>
+        <!--A  -->
+        <view url='' class='weui-cell weui-cell_access' hover-class='weui-cell_active' bindtap='onAnswerClickA'>
+          <view class='weui-cell_bd'>{{optionA}}、{{answerA}}</view>
+          <view class='weui-cell_ft weui-cell_ft_in-access'></view>
+        </view>
+        <!--B  -->
+        <view url='' class='weui-cell weui-cell_access' hover-class='weui-cell_active' bindtap='onAnswerClickB'>
+          <view class='weui-cell_bd'>{{optionB}}、{{answerB}}</view>
+          <view class='weui-cell_ft weui-cell_ft_in-access'></view>
+        </view>
+        <!--C  -->
+        <view url='' class='weui-cell weui-cell_access' hover-class='weui-cell_active' bindtap='onAnswerClickC'>
+          <view class='weui-cell_bd'>{{optionC}}、{{answerC}}</view>
+          <view class='weui-cell_ft weui-cell_ft_in-access'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

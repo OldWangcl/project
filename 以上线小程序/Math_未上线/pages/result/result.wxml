@@ -1,0 +1,24 @@
+<view class='record'>
+  <view class='content'>
+    <view class='content-record'>
+      <text class='good'>恭喜您,您的学历为:</text>
+      <text class='records'>{{record}}</text>
+    </view>
+    <view class='zs'>
+      <view class='title'>
+        <text>{{record}}</text>
+        <text>学位证书</text>
+      </view>
+      <view class='img'>
+        <image src='http://img.mp.itc.cn/upload/20170810/6da253a32b6b4f33b50c68ad82dbb28b_th.jpg'></image>
+      </view>
+    </view>
+    <!--地址  -->
+    <view class='cate'>
+      <view>
+        <text class='unit'>颁发单位：</text>
+        <text class='china'>中国佛学院</text>
+      </view>
+    </view>
+  </view>
+</view>

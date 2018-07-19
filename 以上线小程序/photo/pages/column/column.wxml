@@ -1,0 +1,58 @@
+<!--pages/column/column.wxml-->
+<view class='containers' wx:if='{{kfhidden}}'>
+  <view class="list-tab">
+    <ul>
+      <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">校花美女</li>
+      <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">丝袜制服</li>
+      <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">清纯可人</li>
+    </ul>
+  </view>
+  <view class='line'></view>
+
+  <swiper class="swiper-box" current="{{current}}" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}' bindchange="changeSlider">
+    <block>
+      <!-- 校花美女-->
+      <swiper-item>
+        <scroll-view scroll-y="true" class="scroll-box">
+          <view class='content'>
+            <view class='content-first' wx:for='{{contentUrls}}' bindtap='onContentTap' data-index='{{item.txt}}' wx:key='item.cid' data-id='{{item.cid}}' data-img='{{item.img}}'>
+              <image src='{{item.img}}' class='content-img' mode='aspectFill'>
+              </image>
+              <view class='text'>
+                <text>{{item.txt}}</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <!--丝袜制服 -->
+      <swiper-item>
+        <scroll-view scroll-y="true" class="scroll-box">
+          <view class='content'>
+            <view class='content-first' wx:for='{{uniformUrls}}' bindtap='onContentTap' data-index='{{item.txt}}' wx:key='item.cid' data-id='{{item.cid}}' data-img='{{item.img}}'>
+              <image src='{{item.img}}' class='content-img' mode='aspectFill'>
+              </image>
+              <view class='text'>
+                <text>{{item.txt}}</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <!-- 清纯可人-->
+      <swiper-item>
+        <scroll-view scroll-y="true" class="scroll-box">
+          <view class='content'>
+            <view class='content-first' wx:for='{{lovelyUrls}}' bindtap='onContentTap' data-index='{{item.txt}}' wx:key='item.cid' data-id='{{item.cid}}' data-img='{{item.img}}'>
+              <image src='{{item.img}}' class='content-img' mode='aspectFill'>
+              </image>
+              <view class='text'>
+                <text>{{item.txt}}</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

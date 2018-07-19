@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/main/index",
+    "pages/leave/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EEEFF1",
+    "navigationBarTitleText": "美图欣赏",
+    "navigationBarTextStyle": "black"
+  }
+}

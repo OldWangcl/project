@@ -1,0 +1,10 @@
+<view class='wrap'>
+  <view class='bgc'>
+    <image src='http://imoeu.com.img.800cdn.com/html/wechat/images/yunshi/blackbord.png' mode='widthFix'>
+    </image>
+    <!--  -->
+    <view class='bgn' bindtap='onTestTap'>
+      <button open-type='getUserInfo' plain='false'>开始考试</button>
+    </view>
+  </view>
+</view>

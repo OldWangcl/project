@@ -1,0 +1,103 @@
+/* pages/test/test.wxss */
+.user{
+  position: relative;
+}
+.user image{
+  width: 100%;
+}
+.user-img{
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+}
+.avatarUrl{
+  height: 115rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.nickName{
+  font-size: 28rpx;
+  color: #000;
+}
+/*music  */
+.music{
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+.music image{
+  height: 115rpx;
+  width: 115rpx;
+}
+#lanren .on{
+   -webkit-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite;
+  }
+@-webkit-keyframes rotating {
+	from{
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+    	transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+/*title  */
+.title{
+  position: absolute;
+  left: 130rpx;
+  bottom: 325rpx;
+}
+.border{
+  width: 500rpx;
+  height: 600rpx;
+  border-radius: 15rpx;
+  box-shadow: 5px 10px 10px 10px #888;
+}
+.cycle{
+  color: #000;
+}
+.question{
+  font-size: 34rpx;
+  padding-top: 40rpx;
+  color: #000;
+  width: 100%;
+  white-space: pre-wrap;
+}
+.QA{
+  font-size: 28rpx;
+  border: 1px solid #fff;
+  margin-top: 65rpx;
+  border-radius: 28rpx;
+  width: 90%;
+  height: 100%;
+  /* line-height: 60rpx; */
+  margin-left: 20rpx;
+  box-shadow: 10px 10px 10px 5px #888888;
+}
+.QA:active{
+  background: #00FFFF;
+}

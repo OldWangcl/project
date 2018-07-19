@@ -1,0 +1,46 @@
+<view class='wrap'>
+  <!--swiper  -->
+  <view class='swiper'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}'>
+      <block wx:for='{{contentUrls}}' wx:key='item.cid'>
+        <swiper-item catchtap='onMoreTap' data-id='{{item.cid}}' data-index='{{item.txt}}'>
+          <image src='{{item.img}}' mode='aspectFill'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <ad unit-id="adunit-c4e5d85db1c56fc6"></ad>
+  <!--内容 start  -->
+  <view class='content'>
+    <view class='content-first' wx:for='{{contentUrls}}' catchtap='onMoreTap' data-index='{{item.txt}}' wx:key='item.cid' data-id='{{item.cid}}' data-img='{{item.img}}'>
+      <image src='{{item.img}}' class='content-img' mode='aspectFill'>
+      </image>
+      <view class='content-text'>
+        <text class='text'>{{item.txt}}</text>
+        <view class='views'>人气值：{{popular_value}}</view>
+        <view class='time'>{{update_time}}</view>
+      </view>
+    </view>
+  </view>
+  <!--刷新按钮 end  -->
+  <view class='refresh' bindtap='onRefreshTap'>
+    <view class='refresh-bgc'>
+      <image src='/images/icon/refresh.png' class='refresh-img'></image>
+    </view>
+  </view>
+  <!-- 弹出框 -->
+  <view class='box' hidden='{{!hidden}}'>
+    <view class='box1'>
+      <view class='title'>
+        <text>温馨提示</text> 
+      </view>
+      <view class='contents'>
+        <text>亲！没有更多数据了哦~</text>
+      </view>
+      <view class='btns'>
+        <button bindtap='onCancelTap'>确定</button>
+      </view>
+    </view>
+  </view>
+  <!--wrap  -->
+</view>

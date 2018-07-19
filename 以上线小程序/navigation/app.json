@@ -1,0 +1,11 @@
+{
+  "pages":[
+   "pages/navigation/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#00C9FD",
+    "navigationBarTitleText": "点我达",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,28 @@
+<view class='user'>
+  <image src='{{backgroundImg}}' mode='widthFix'>
+  </image>
+  <view class='user-img'>
+    <image class='avatarUrl' src='{{userInfo.avatarUrl}}'></image>
+    <text class='nickName'>{{userInfo.nickName}}</text>
+  </view>
+  <!--music  -->
+  <view id='lanren' class='music'>
+    <view id='audio-btn'>
+      <image class='on' wx:if='{{isPlayMusic}}' src='../../images/music_on.png' bindtap='onPauseMusic'></image>
+      <image wx:else src='../../images/music_off.png' bindtap='onStartMusic'></image>
+    </view>
+  </view>
+  <view class='title'>
+    <view class='border'>
+      <view class='cycle'>
+        <view class='question'>{{index + 1}} 、{{questionDetail}}</view>
+        <!--A-->
+        <view class='QA' hover-class='#ff0000' catchtap='onAnswerATap'>{{optionA}}、{{answerA}}</view>
+        <!--B  -->
+        <view class='QA'  catchtap='onAnswerBTap'>{{optionB}}、{{answerB}}</view>
+        <!--C  -->
+        <view class='QA' catchtap='onAnswerCTap'>{{optionC}}、{{answerC}}</view>
+      </view>
+    </view>
+  </view>
+</view>

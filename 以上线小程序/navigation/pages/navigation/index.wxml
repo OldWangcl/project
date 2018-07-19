@@ -1,0 +1,107 @@
+<!--pages/navigation/index.wxml,导航首页-->
+<view class='containers' wx:if='{{kfhidden}}'>
+  <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' circular='{{circular}}'>
+    <swiper-item wx:for='{{imageUrls}}' wx:key='item.id'>
+      <image src='{{item}}' mode='aspectFill'></image>
+    </swiper-item>
+  </swiper>
+  <!--轮播图end  -->
+  <view class="list-tab">
+    <ul>
+      <li class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">热门</li>
+      <li class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">娱乐</li>
+      <li class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">休闲</li>
+      <li class="{{current == 3 ? 'active' : ''}}" catchtap="switchSlider" data-index="3">工具</li>
+    </ul>
+  </view>
+  <view class='line'></view>
+
+  <swiper class="swiper-box" current="{{current}}" indicator-dots="{{swiper.indicatorDots}}" autoplay="{{swiper.autoplay}}" interval="{{swiper.interval}}" duration="{{swiper.duration}}" bindchange="changeSlider">
+    <block>
+      <!-- 热门-->
+      <swiper-item>
+        <scroll-view scroll-y="true" class="scroll-box">
+          <view class='box' wx:for='{{contentUrls}}' wx:key='item.id' data-id='{{item.id}}'>
+            <navigator target="miniProgram" open-type="navigate" path='{{item.path}}' app-id='{{item.appid}}' extra-data="" version="release">
+              <view class='program'>
+                <image src='{{item.imgs}}'></image>
+                <view class='program_middle'>
+                  <view class='txt1'>{{item.txt1}}</view>
+                  <view class='txt2'>{{item.txt2}}</view>
+                </view>
+              </view>
+            </navigator>
+            <view class='program_right'>
+              <button class='btn' plain='false' open-type='share' data-imgs='{{item.imgs}}' data-txt='{{item.txt1}}'>分享</button>
+              <navigator class='btns' target="miniProgram" open-type="navigate" path='{{item.path}}' app-id='{{item.appid}}' extra-data="" version="release">开始</navigator>
+            </view>
+            <view class='lines'></view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <!--1娱乐 -->
+      <swiper-item>
+        <scroll-view scroll-y="true" class="scroll-box">
+          <view class='box' wx:for='{{happyUrls}}' wx:key='item.id' data-id='{{item.id}}'>
+            <navigator target="miniProgram" open-type="navigate" path='{{item.path}}' app-id='{{item.appid}}' extra-data="" version="release">
+              <view class='program'>
+                <image src='{{item.imgs}}'></image>
+                <view class='program_middle'>
+                  <view class='txt1'>{{item.txt1}}</view>
+                  <view class='txt2'>{{item.txt2}}</view>
+                </view>
+              </view>
+            </navigator>
+            <view class='program_right'>
+              <button class='btn' plain='false' open-type='share' data-imgs='{{item.imgs}}' data-txt='{{item.txt1}}'>分享</button>
+              <navigator class='btns' target="miniProgram" open-type="navigate" path='{{item.path}}' app-id='{{item.appid}}' extra-data="" version="release">开始</navigator>
+            </view>
+            <view class='lines'></view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <!-- 2 休闲-->
+      <swiper-item>
+        <scroll-view scroll-y="true" class="scroll-box">
+          <view class='box' wx:for='{{relaxUrls}}' wx:key='item.id' data-id='{{item.id}}'>
+            <navigator target="miniProgram" open-type="navigate" path='{{item.path}}' app-id='{{item.appid}}' extra-data="" version="release">
+              <view class='program'>
+                <image src='{{item.imgs}}'></image>
+                <view class='program_middle'>
+                  <view class='txt1'>{{item.txt1}}</view>
+                  <view class='txt2'>{{item.txt2}}</view>
+                </view>
+              </view>
+            </navigator>
+            <view class='program_right'>
+              <button class='btn' plain='false' open-type='share' data-imgs='{{item.imgs}}' data-txt='{{item.txt1}}'>分享</button>
+              <navigator class='btns' target="miniProgram" open-type="navigate" path='{{item.path}}' app-id='{{item.appid}}' extra-data="" version="release">开始</navigator>
+            </view>
+            <view class='lines'></view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+      <!-- 3 工具-->
+      <swiper-item>
+        <scroll-view scroll-y="true" class="scroll-box">
+          <view class='box' wx:for='{{toolUrls}}' wx:key='item.id' data-id='{{item.id}}' catchtap='onIdTap'>
+            <navigator target="miniProgram" open-type="navigate" path='{{item.path}}' app-id='{{item.appid}}' extra-data="" version="release">
+              <view class='program'>
+                <image src='{{item.imgs}}'></image>
+                <view class='program_middle'>
+                  <view class='txt1'>{{item.txt1}}</view>
+                  <view class='txt2'>{{item.txt2}}</view>
+                </view>
+              </view>
+            </navigator>
+            <view class='program_right'>
+              <button class='btn' plain='false' open-type='share' data-imgs='{{item.imgs}}' data-txt='{{item.txt1}}'>分享</button>
+              <navigator class='btns' target="miniProgram" open-type="navigate" path='{{item.path}}' app-id='{{item.appid}}' extra-data="" version="release">开始</navigator>
+            </view>
+            <view class='lines'></view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

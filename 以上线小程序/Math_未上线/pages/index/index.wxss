@@ -1,0 +1,21 @@
+page{
+  background: #fff;
+}
+.bgc{
+  position: relative;
+}
+.bgc image{
+  width: 100%;
+  height: 100%;
+}
+.bgn{
+  position: absolute;
+  top: 615rpx;
+  left: 210rpx;
+}
+button[plain]{
+  background-color: #DFBD3F;
+  border: none;
+  width: 320rpx;
+  color: #fff;
+}

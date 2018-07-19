@@ -1,0 +1,22 @@
+<!--pages/result/result.wxml-->
+<view class='container'>
+  <view class='box'>
+    <view class='A box1'>
+      <text>选择A:  <text class='txts'>{{A}}</text> <text class='txt'>条</text></text>
+    </view>
+    <view class='B box1'>
+      <text>选择B:  <text class='txts'>{{B}}</text> <text class='txt'>条</text></text>
+    </view>
+    <view class='C box1'>
+      <text>选择C:  <text class='txts'>{{C}}</text> <text class='txt'>条</text></text>
+    </view>
+    <view class='type'>
+      <text>您的性格类型是：<text class='kind'>{{Kind}}</text></text>
+    </view>
+    <!--分享好友  -->
+    <view class='btn'>
+      <button class='btns' style="font-size = 28rpx;" plain='false' open-type='share'>分享好友</button>
+    </view>
+  </view>
+  
+</view>

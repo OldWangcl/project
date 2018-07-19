@@ -1,0 +1,73 @@
+/* pages/result/result.wxss */
+page{
+  background: url(http://imoeu.com.img.800cdn.com/html/wechat/images/yunshi/record.png)top;
+}
+.record{
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  width: 650rpx;
+  height: 800rpx;
+  /* border: 1px solid #000; */
+  margin: 200rpx auto;
+  box-shadow: 5px 5px 5px 5px #888;
+  border-radius: 15rpx;
+}
+.content-record{
+  margin-top: 140rpx;
+  margin-left: 40rpx;
+}
+.good{
+  font-size: 30rpx;
+  color: #000;
+  letter-spacing: 4rpx;
+}
+.records{
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #ff0000;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #888;
+}
+.zs{
+  width: 530rpx;
+  height: 420rpx;
+  margin: 35rpx auto;
+  border-radius: 15rpx; 
+  box-shadow: 5rpx 5rpx 5rpx 10rpx #888;
+}
+.title{
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 45rpx;
+  letter-spacing: 20rpx;
+}
+.title text{
+  margin-top: 20rpx;
+  display: inline-block;
+}
+.img{
+  width: 400rpx;
+  height: 400rpx;
+  margin: 0 auto;
+}
+.img image{
+  margin-top: 20rpx;
+  width: 300rpx;
+  margin-left: 40rpx;
+  height: 300rpx;
+}
+.cate{
+  float: right;
+  margin-top: 20rpx; 
+  margin-right: 60rpx;
+  font-size: 32rpx;
+}
+
+.unit{
+  font-size: 28rpx;
+}
+.china{
+  color: #888;
+}

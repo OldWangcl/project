@@ -1,0 +1,96 @@
+/* pages/test/test.wxss */
+page{
+  /*F7CF3A  */
+    background: url(http://imoeu.com.img.800cdn.com/html/wechat/images/yunshi/xcx-bgc-01.png); 
+}
+/*头像 start */
+.top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40rpx;
+  justify-content: space-around;
+}
+.head{
+  margin-right: 460rpx;
+}
+.head image{
+  width: 100rpx;
+  height: 100rpx;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.music image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.username{
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+/*头像 end */
+/*题目 start  */
+.page{
+  margin: 60rpx;
+}
+.page_hd{
+   font-size: 40rpx;
+   letter-spacing: 4rpx; 
+}
+.page_bd{
+   margin-top: 40rpx;  
+}
+.weui-cell{
+   margin-top: 100rpx; 
+   /* margin-left: 20rpx; */
+}
+.weui-cell_access{
+  border: 1rpx solid #D2AA31;
+  height: 100%;
+  border-radius: 15rpx;
+  line-height: 80rpx;
+  box-shadow: 5rpx 5rpx 5rpx #888888;
+}
+.weui-cell_bd{
+  margin-left: 20rpx;
+  font-size: 34rpx;
+  white-space: pre-wrap;
+}
+/*题目 end  */
+/*music  */
+#lanren .on{
+   -webkit-animation: rotating 1.2s linear infinite;
+    animation: rotating 1.2s linear infinite;
+  }
+@-webkit-keyframes rotating {
+	from{
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+    	transform: rotate(0deg);
+	}
+	to{
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

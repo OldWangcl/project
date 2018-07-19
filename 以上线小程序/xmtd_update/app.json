@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/main/main/index",
+    "pages/main/more/more",
+    "pages/main/expect/expect",
+    "pages/column/column_main/column_main",
+    "pages/collection/collection",
+    "pages/column/column"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#EEEFF1",
+    "navigationBarTitleText": "热点急先锋",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#000",
+    "selectedColor":"#ff0000",
+    "list": [
+      {
+        "pagePath": "pages/main/main/index",
+        "iconPath":"/images/icon/select-01.png",
+        "selectedIconPath":"/images/icon/select-02.png",
+        "text": "精选"
+      },
+      {
+        "pagePath": "pages/column/column",
+        "iconPath": "/images/icon/column-01.png",
+        "selectedIconPath": "/images/icon/column-02.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/collection/collection",
+        "iconPath": "/images/icon/collection-01.png",
+        "selectedIconPath": "/images/icon/collection-02.png",
+        "text": "收藏"
+      }
+    ]
+  }
+}

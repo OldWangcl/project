@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+<view class='container' wx:if='{{kfhidden}}'>
+  <view class='box' hidden='{{hidden}}'></view>
+  <view class='bounced' hidden='{{hidden}}'>
+    <button class='login' plain='true' open-type='getUserInfo' bindtap='onLoginTap'>
+    <button open-type='openSetting' bindopensetting='openSetting'></button>
+      <image src='../../images/wx-01.png' mode='aspectFit' class='img'></image>
+      <text class='txt'>开始答题</text>
+    </button>
+  </view>
+  <!--模态弹窗 end  --> 
+</view>

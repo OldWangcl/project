@@ -1,0 +1,37 @@
+<!--pages/main/main.wxml 首页-->
+<view class='container' wx:if='{{kfhidden}}'>
+  <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' circular='{{circular}}'>
+    <block wx:for='{{contentUrls}}' wx:key='item.cid'>
+      <swiper-item bindtap='onContentTap' data-index='{{item.txt}}' data-id='{{item.cid}}' data-img='{{item.img}}'>
+        <image src='{{item.img}}' mode='aspectFill'></image>
+        <view class='text'>
+          <text>{{item.txt}}</text>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!----- swiper end ----->
+  <view class='content'>
+    <view class='content-first' wx:for='{{contentUrls}}' bindtap='onContentTap' data-index='{{item.txt}}' wx:key='item.cid' data-id='{{item.cid}}' data-img='{{item.img}}'>
+      <image src='{{item.img}}' class='content-img' mode='aspectFill'>
+      </image>
+      <view class='text'>
+        <text>{{item.txt}}</text>
+      </view>
+    </view>
+  </view>
+   <!-- 弹出框 -->
+  <view class='box' hidden='{{!hidden}}'>
+    <view class='box1'>
+      <view class='title'>
+        <text>温馨提示</text> 
+      </view>
+      <view class='contents'>
+        <text>亲！没有更多内容了哦~</text>
+      </view>
+      <view class='btns'>
+        <button bindtap='onCancelTap'>确定</button>
+      </view>
+    </view>
+  </view>
+</view>

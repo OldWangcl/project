@@ -1,0 +1,139 @@
+/* pages/main/More/More.wxss */
+.container{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.wrap{
+  height: 100%;
+  margin: 30rpx;
+}
+.text{
+  letter-spacing: 3rpx;
+  font-size: 50rpx;
+}
+.top{
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  font-size: 32rpx;
+  color: #767778;
+}
+.views{
+  margin-left: 30rpx;
+  border-radius: 30rpx;
+  padding: 5rpx 10rpx;
+  box-shadow:0px 0px  10rpx 5rpx #aaa;
+}
+.time{
+  border-radius: 30rpx;
+  margin-left: 30rpx;
+  padding: 5rpx 20rpx;
+  box-shadow:0px 0px  10rpx 5rpx #aaa;
+}
+/*全文完 start  */
+.full{
+  margin-top: 30rpx;
+  margin-bottom: 250rpx;
+}
+.full-text{
+  text-align: center;
+}
+.button{
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 30rpx;
+}
+.button-general{
+  width: 145rpx;
+  height: 75rpx;
+  color: #fff;
+  line-height: 75rpx;
+  text-align: center;
+  margin-right: 35rpx;
+  border-radius: 30rpx;
+  box-shadow:0px 0px  5rpx 5rpx #aaa;
+}
+.button-left{
+  background-color: #43A220;
+}
+.button-middle{
+  background-color: #DB2C32;
+}
+.button-right{
+  background-color: #43A220;
+}
+/*全文完 end  */
+/*固定定位 start  */
+.border{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  border-top-left-radius: 40rpx;
+  border-top-right-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+  height: 70rpx;
+  margin-left: 130rpx;
+  margin-bottom: 10rpx;
+  box-shadow:5rpx 5rpx 5rpx 10rpx #aaa;
+  display: flex;
+  flex-direction: row;
+}
+.left, .right{
+  display: flex;
+  flex-direction: row;
+  margin: 10rpx 0 10rpx 30rpx;
+}
+.left-img image{
+  width: 45rpx;
+  height: 45rpx;
+  margin-right: 15rpx;
+}
+.right-img{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.right-img image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.left-text, .right-text{
+  font-size: 30rpx;
+}
+.left-text{
+  color: #7C7C7C;
+}
+.left-line{
+  margin-left: 40rpx;
+  height: 60rpx;
+  width: 1rpx;
+  content: '';
+  line-height: 60rpx;
+  background-color: #EAEAEB;
+}
+.right-text[plain]{
+  color: #E56B5C;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: left;
+  border: 0;
+  padding-left: 8rpx;
+}
+
+/*固定定位 end  */
+/*编辑 start  */
+.content{
+  font-size: 24rpx;
+  padding: 0 30rpx;
+  text-indent: 2em;
+  margin-right: 40rpx;
+}
+/*编辑 end  */
